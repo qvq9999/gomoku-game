@@ -2,8 +2,7 @@
 
 手机端网页双人联机五子棋 —— 基于 Node.js + Express + ws 的实时对战服务，前端零构建、零框架，纯原生 HTML5 / CSS / Canvas 实现。
 
-> 当前版本：`2.1.0`（见 `package.json`）。数据库已升级为 SQLite（`data/gomoku.db`），历史 JSON 数据在首次启动时自动迁移。
-
+> 当前版本：`2.3.0`，数据库已升级为 SQLite（`data/gomoku.db`）
 ---
 
 ## 一、核心功能特性
@@ -244,8 +243,6 @@ Rapfi 仅提供 Linux 可执行文件。非 Linux 环境请设置 `GOBANG_AI_ENG
 
 - `lib/gobang-ai` 移植自 GitHub 仓库 `lihongxun945/gobang`（**未声明许可证**，默认保留所有权利），当前仅用于个人学习与研究；商用 / 公开部署需先获原作者授权或改用明确开源许可的引擎。
 - Rapfi 引擎为 **GPL-3.0**，二进制位于 `engine/rapfi/`，**禁止分发到客户端 / 前端包**（如 App 打包时需规避前端引入此引擎）。
-- 本项目整体许可证：**待补充**（仓库根未提供 `LICENSE` 文件）。
-
 ---
 
 > 文档与代码如有出入，以 `server.js`、`package.json`、`lib/`、`public/` 实际内容为准。部署细节见同目录 `DEPLOY.md`，协议细节见 `PROTOCOL.md`。
